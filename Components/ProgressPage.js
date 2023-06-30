@@ -5,8 +5,8 @@ import "./ProgressBar.css"
 import {Link} from "react-router-dom";
 
 const ProgressPage = () => {
-  const time= useRef(4)
-  const startTime= useRef(4)
+  const time= useRef(120)
+  const startTime= useRef(120)  
   const progress= useRef(100)
   const [intervalId,setIntervalId]= useState(null) 
   const [minutes,setMinutes]=useState(2)
@@ -44,7 +44,7 @@ const ProgressPage = () => {
    // progress.current=0
     time.current=0
     //startTime.current=0
-    setToggle(true)
+    setToggle((prev)=>!prev)
    
     
     console.log("startTime",startTime.current)
