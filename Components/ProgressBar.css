@@ -1,0 +1,28 @@
+.progress-container {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #9b53d6;
+
+}
+
+.progress {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  border-radius: 50%;
+  background-color: #ecf5ed;
+  transform-origin: center center;
+  transition: transform 0.8s ease;
+}
+.value{
+  height: 40px;
+  width: 60px;
+  position: absolute;
+  top: 60px;
+  left: 55px;
+ 
+}
