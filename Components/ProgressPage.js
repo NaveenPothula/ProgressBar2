@@ -59,7 +59,7 @@ const ProgressPage = () => {
     console.log(intervalId)
     if (intervalId===null){
       progress.current=100
-      time.current +=5
+      time.current +=10
       startTime.current=time.current
       
       
@@ -69,7 +69,7 @@ const ProgressPage = () => {
     }
     else{
       progress.current=100
-      time.current+=5
+      time.current+=10
       startTime.current=time.current 
       
        
@@ -82,6 +82,8 @@ const ProgressPage = () => {
     if(time.current===0 ){
       progress.current= 0
       startTime.current=0
+      setMinutes(0)
+      setSeconds(0)
       clearInterval(intervalId)
       setIntervalId((prev)=>null)
       
